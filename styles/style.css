@@ -1,1 +1,292 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 91px 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header__links-list {
+    display: flex;
+    gap: 33px;
+    list-style: circle;
+    text-transform: lowercase;
+}
+
+.header__link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    line-height: 1;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__logo {
+    display: block;
+    width: 137px;
+}
+
+.address {
+    justify-self: end;
+    max-width: 240px;
+    line-height: 1.35;
+}
+
+.address__contact {
+    text-decoration: none; 
+    border-bottom: 1px solid #000;
+}
+
+.cover {
+    display: flex;
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    z-index: -2;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    z-index: -1;
+}
+
+.cover__title {
+    display: flex;
+    flex-direction: column;
+    padding: 157px 18px 45px 50px;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 30px;
+}
+
+.aligned-text_center {
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.description {
+    display: flex;
+    color: #fff;
+    padding: 50px;
+}
+
+.cover__description-text {
+    height: 28px;
+    margin-top: 13px;
+    text-align: center;
+    word-spacing: 19px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.bet-button {
+    margin-left: 104px;
+    padding: 12px 31px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.lots__heading{
+    padding: 180px 0 27px 65px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 0 24px 31px;
+    list-style: none;
+}
+
+.lots__card-list-item {
+    width: 334px;
+    min-height: 596px;
+}
+
+.card {
+    height: 100%;
+    color: #fff;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+
+.card-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card__title {
+    padding: 48px 40px 0;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.card__text {
+    padding: 0 40px 48px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.lots__look-more-link {
+    margin: 32px 0 0 65px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.5px;
+    text-transform: lowercase;
+    /* text-decoration: none;
+    border-bottom: 1px solid #000; */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+.about {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 334px 1fr;
+    padding: 154px 0 181px 25px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    width: 240px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    width: 148px;
+}
+
+.about__column {
+    margin: 100px 24px 0 25px;
+}
+
+.about__title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 47px;
+    padding-bottom: 100px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px;
+    padding-bottom: 82px;
+    justify-items: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.address__footer {
+    justify-self: start;
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+}
+
+.footer__menu-list-item {
+    line-height: 21px;
+    text-transform: lowercase;
+}
+
+.footer__menu-link {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    line-height: 1;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+    justify-self: end;
+    list-style: none;
+}
+
+.footer__social-link {
+    width: 48px;
+}
+
+.footer__social-icon {
+    width: 48px;
+}
